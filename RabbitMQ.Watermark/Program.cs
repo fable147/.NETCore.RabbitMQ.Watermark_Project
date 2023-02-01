@@ -18,7 +18,7 @@ namespace RabbitMQ.Watermark
             {
                 options.UseInMemoryDatabase(databaseName: "productDb");
             });
-            builder.Services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri(" amqps://zjxbipac:Inw_7orQZwZl1EZBR0icHBsS3y-FNQkI@cow.rmq2.cloudamqp.com/zjxbipac"),DispatchConsumersAsync=true});
+            builder.Services.AddSingleton(sp => new ConnectionFactory() { Uri = new Uri(" Write your own rabbitmq URI"),DispatchConsumersAsync=true});
             builder.Services.AddSingleton<RabbitMQClientService>();
             builder.Services.AddSingleton<RabbitMQPublisher>();
             //builder.Services.AddHostedService<ImageWatermarkProcessBackgroundService>();
